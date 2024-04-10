@@ -1,0 +1,9 @@
+[user]
+email = diwakarvedant07@gmail.com
+name = vedant_diwakar
+
+[github]
+user = "diwakarvedant07"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/id_ed25519.pub"

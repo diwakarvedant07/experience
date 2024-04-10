@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     var allModules;
     var allFeedbacks;
     var allUsers;
-    var api_url = "https://api.mastersofterp.in/MSEXP/";
-    //var api_url = "http://127.0.0.1:5605/"
+    var api_url = "http://127.0.0.1:5605/"
     var api_key = "8779bad8-4022-11ee-be56-0242ac120002";
     var token
     var user
