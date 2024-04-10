@@ -1,0 +1,263 @@
+.divIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.read_less {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.read_more {
+  overflow: visible !important;
+  -webkit-box-orient: horizontal !important;
+}
+
+.left-module-details {
+  max-height: 68vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 85px;
+}
+
+.right-module-details {
+  max-height: 68vh;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.iti {
+  width: 100% !important;
+}
+
+//rating scss
+
+// #full-stars-example {
+
+//     [type=radio]:checked + label:before,
+//     [type=radio]:checked + label:after,
+//     [type=radio]:not(:checked) + label:before,
+//     [type=radio]:not(:checked) + label:after{
+//         display: none;
+//     }
+
+//     [type=radio]:not(:checked) + label,
+//     [type=radio]:checked + label{
+//         line-height: unset;
+//     }
+
+//     /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+//     .rating-group {
+//         display: inline-flex;
+//     }
+
+//     /* make hover effect work properly in IE */
+//     .rating__icon {
+//         pointer-events: none;
+//     }
+
+//     /* hide radio inputs */
+//     .rating__input {
+//         position: absolute !important;
+//         left: -9999px !important;
+//     }
+
+//     /* set icon padding and size */
+//     .rating__label {
+//         cursor: pointer;
+//         padding: 0 0.1em;
+//         font-size: 2rem;
+//     }
+
+//     /* set default star color */
+//     .rating__icon--star {
+//         color: orange;
+//     }
+
+//     /* set color of none icon when unchecked */
+//     .rating__icon--none {
+//         color: #eee;
+//     }
+
+//     /* if none icon is checked, make it red */
+//     .rating__input--none:checked+.rating__label .rating__icon--none {
+//         color: red;
+//     }
+
+//     /* if any input is checked, make its following siblings grey */
+//     .rating__input:checked~.rating__label .rating__icon--star {
+//         color: #ddd;
+//     }
+
+//     /* make all stars orange on rating group hover */
+//     .rating-group:hover .rating__label .rating__icon--star {
+//         color: orange;
+//     }
+
+//     /* make hovered input's following siblings grey on hover */
+//     .rating__input:hover~.rating__label .rating__icon--star {
+//         color: #ddd;
+//     }
+
+//     /* make none icon grey on rating group hover */
+//     .rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+//         color: #eee;
+//     }
+
+//     /* make none icon red on hover */
+//     .rating__input--none:hover+.rating__label .rating__icon--none {
+//         color: red;
+//     }
+// }
+
+#half-stars-example {
+  [type="radio"]:checked + label:before,
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:before,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+
+  [type="radio"]:not(:checked) + label,
+  [type="radio"]:checked + label {
+    line-height: unset;
+  }
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+
+  /* hide radio inputs */
+  .rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+
+  /* add padding and positioning to half star labels */
+  .rating__label--half {
+    padding-right: 0;
+    margin-right: -31px;
+    z-index: 2;
+  }
+
+  /* set default star color */
+  .rating__icon--star {
+    color: orange;
+  }
+
+  /* set color of none icon when unchecked */
+  .rating__icon--none {
+    color: #eee;
+  }
+
+  /* if none icon is checked, make it red */
+  .rating__input--none:checked + .rating__label .rating__icon--none {
+    color: red;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star,
+  .rating-group:hover .rating__label--half .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star,
+  .rating__input:hover ~ .rating__label--half .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make none icon grey on rating group hover */
+  .rating-group:hover
+    .rating__input--none:not(:hover)
+    + .rating__label
+    .rating__icon--none {
+    color: #eee;
+  }
+
+  /* make none icon red on hover */
+  .rating__input--none:hover + .rating__label .rating__icon--none {
+    color: red;
+  }
+}
+
+.swal2-confirm {
+  background-color: red;
+}
+
+.core-nav.nav-core-sticky {
+  z-index: 999 !important;
+}
+
+.scrollspy-example {
+  height: 90vh;
+  margin-top: 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.simple-list-example-scrollspy a.active {
+  color: #ee1044;
+}
+
+.blog-detail {
+    .carousel-indicators{
+        background: rgb(0 0 0 / 20%);
+    }
+  .carousel-control-prev,
+  .carousel-control-next {
+    div {
+      background: rgb(0 0 0 / 27%);
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

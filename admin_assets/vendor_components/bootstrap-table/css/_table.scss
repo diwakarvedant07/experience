@@ -1,0 +1,78 @@
+$main-color:$linkBlue ;
+table.table{
+    border-collapse:separate;
+    border-spacing: 2px 10px;
+    
+    thead{
+        position:sticky;
+        top:0;
+        
+        th{
+            background:rgba(white,0.95) !important;
+            // border-bottom:2px solid $main-color !important;;
+        }
+        th:nth-child(4n-3){
+            border-bottom: 2px solid $linkBlue !important;
+        }
+        th:nth-child(4n-2){
+            border-bottom: 2px solid red !important;
+        }
+        th:nth-child(4n-1){
+            border-bottom: 2px solid orangered !important;
+        }
+        th:nth-child(4n){
+            border-bottom: 2px solid $purple !important;
+        }
+        
+    }
+    tbody{
+        tr{
+            border-radius:5px !important;
+            border: 1px solid rgba(silver,1) !important;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1) !important;
+            td{
+                vertical-align:middle;
+                border-bottom:none !important;
+                font-size: smaller;
+               
+                
+            }
+            td:first-child {
+                border-left:5px solid transparent !important;    
+        } 
+        }
+        tr:hover{
+            td{ 
+                background:rgb(247, 247, 247);
+            }
+            td:first-child {
+                    border-left:5px solid $main-color !important;    
+            }
+        }
+        
+        tr.inside-row{
+            background: white;
+            border-radius:5px;
+            td{
+                border-left:5px solid transparent !important;
+            }
+            
+        }
+        tr.inside-row:hover{
+            td{
+                background: white;
+                border-left:5px solid $main-color !important;
+            }
+        }
+    }
+}
+
+.page-item.active {
+
+          .page-link {
+            z-index: 3;
+             color: #ffffff;
+            background-color: $btn-primary-color;
+                border-color: $btn-primary-color;
+        }
+}

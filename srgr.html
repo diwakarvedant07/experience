@@ -1,0 +1,33 @@
+<div class="modal fade" id="imageFeedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title">Feedback</h4>
+                <button type="button" class="btn close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="form-group" id="configSuggestions">
+                            <label><sup></sup><span>Your Valuable Suggestions</span></label>
+                            <textarea class="form-control" id="imageFeedbackRemarks" name="txtSuggestions" tabindex="1"
+                                placeholder="Enter Response"></textarea>
+                            <div class="invalid-feedback">
+                                Please Enter Your Response
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-12 text-center'>
+                    <button type="button" tabindex="1" class="btn btn-primary common-submit-btn" id="submitImageFeedback"
+                        data-bs-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-outline-danger common-cancel-btn" data-bs-dismiss="modal"
+                        tabindex="1" id="btnCloseImageFeedback">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

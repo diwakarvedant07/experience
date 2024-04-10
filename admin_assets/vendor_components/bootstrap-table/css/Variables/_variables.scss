@@ -1,0 +1,86 @@
+// font for the entire page
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$label-weight:500;
+
+
+$general-box-shadow:rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+/**
+* TODO: Main Nav values
+*/
+//nav
+$topNavMarginHorizontal:12px;
+$navBarOuterPadding:0px;
+$navBarHeight:9vh;
+$navCollegeLogo-marginLeft:50px;
+
+//togglemenu 
+$toggleMenuBtn:45px;
+$toggleMenuBtnTop:10px;
+$toggleMenuBtnLeft:10px;
+$toggleMenuBtn-responsive-positionTop:7px;
+$toggleMenuBtn-responsive-size:55px;
+//logo
+$collegeLogoColor:$secondaryFill;
+$navIconSize:20px;
+$navIcon-color:$primaryFill;
+//search
+$recentSearches:$secondaryFill;
+//Messages
+$newMessageColor:$primary;
+$allMessageColor: $newMessageColor;
+$newMessage-hover-color:$secondaryFill;
+//profile
+$profileHeadingColor:$secondaryFill;
+
+
+$general-thin-card-bottom-border:1px solid #ccc;
+
+$gen-padding:10px 20px;
+
+$fab-size:50px;
+$fab-pos:5%;
+
+$course-tab-width:70%;
+$BR-5:5px;
+$inputField-borderRadius:3px;
+$padding-10:10px;
+$fw600:500;
+$primaryHeading-font-size:16px;
+$fw400:400;
+$font11:smaller;
+$font12:smaller;
+$font14:16px;
+$font16:1.6rem;
+$qa-card-padding:10px 10px 20px 10px;
+$primary-font-weight:400;
+$generalGap:10px;
+$margin-20:20px;
+ $generalOuterMargin:20px;
+ $generalOuterPadding:20px;
+ $mainGrid-gap:10px;
+ $mainGrid-card-padding:20px;
+ $courseGrid-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+ $font1:smaller;
+ $mainGrid-margin:-50px -80px;
+ $custom-singleSelect-borderRadius:3px;
+ $dropdownMainFontSize:medium;
+ $dropdownMainFontWeight:400;
+ $dropdownTransitionTime:0.5s;
+ $dropdownHoverTime:0.5s;
+ $dropdownBoxHeight:250px;
+ $dropdownPadding:10px;
+ $fullWidth:100%;
+ $dropdownMenuFontSize:smaller;
+ $dropdownBGColor:$darkSlateBlue;
+ $customMapping-outer-borderRadius:5px;
+ $mainMapAddBtnColor:$secondaryFill;
+ $mainMapUploadBtnColor:$secondaryFill;
+ $mainMapBulkBtnColor:$pastalOrange;
+$mainMap-textarea-width:$fullWidth;
+$mainMap-textarea-height:80px;
+$custom-multiSelect-borderRadius:3px;
+$dropdownCheckBoxColor:#0d6efd;
+$pillborderColor:$black;
+$pillSeparationColor:#0d6efd;

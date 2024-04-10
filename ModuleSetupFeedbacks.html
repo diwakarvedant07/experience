@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./admin_assets/images/custom-images/sm-logo.png">
+
+    <title>MSExperience</title>
+	<!-- bootstrap iconsss -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" rel="stylesheet">
+	<!-- izitoast -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" rel="stylesheet"/>
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="./admin_assets/css/vendors_css.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- Style-->  
+	<link rel="stylesheet" href="./admin_assets/scss/style.css">
+	<link rel="stylesheet" href="./admin_assets/css/skin_color.css">	
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/extensions/filter-control/bootstrap-table-filter-control.min.css" integrity="sha512-IK+plgQ3Qomdj9Mzq2WbM5LF8JY0PPXHGGfiBqBkwhXUi1tVAIvIaLbt330r3t0Y4EUxqG0YGfEhRrQS0gKeYQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.css" integrity="sha512-5RNDl2gYvm6wpoVAU4J2+cMGZQeE2o4/AksK/bi355p/C31aRibC93EYxXczXq3ja2PJj60uifzcocu2Ca2FBg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+	<div id="loader"></div>
+
+  <header class="main-header">
+	<div class="d-flex align-items-center logo-box justify-content-start">
+		<a href="#" class="waves-effect waves-light nav-link d-none d-md-inline-block mx-10 push-btn bg-transparent" data-toggle="push-menu" role="button">
+			<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+		</a>	
+		<!-- Logo -->
+		<a href="#" class="logo">
+		  <!-- logo-->
+		  <div class="logo-lg">
+			  <span class="dark-logo"><img src="./admin_assets/images/custom-images/company-logo - white.png" alt="logo"></span>
+			  <span class="light-logo"><img src="./admin_assets/images/custom-images/company-logo.png" alt="logo"></span>
+		  </div>
+		</a>	
+	</div>  
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+	  <div class="app-menu">
+		<ul class="header-megamenu nav">
+			<li class="btn-group nav-item d-md-none">
+				<a href="#" class="waves-effect waves-light nav-link push-btn" data-toggle="push-menu" role="button">
+					<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+			    </a>
+			</li>
+		</ul> 
+	  </div>
+		
+      <div class="navbar-custom-menu r-side">
+        <ul class="nav navbar-nav">
+		  
+	      <!-- User Account-->
+          <li class="dropdown user user-menu me-2">
+            <a href="#" class="waves-effect waves-light dropdown-toggle w-p100 align-items-center d-flex" data-bs-toggle="dropdown" title="User">
+				<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
+				<span class="fs-14" id="username"></span>
+            </a>
+          </li>	
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+              <a data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light" id="logout">
+			  	<i class="bi bi-power"></i>
+			  </a>
+          </li>
+			
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+			<!-- sidebar-->
+			<section class="sidebar position-relative">
+				<div class="multinav">
+					<div class="multinav-scroll" style="height: 100%;">
+						<!-- sidebar menu-->
+						<ul class="sidebar-menu" data-widget="tree">
+							<li class="">
+								<a href="./ModuleSetup.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Module Setup</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./Products.html" target="_blank">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Products</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./ModuleSetupAllUsers.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>All Users</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Feedbacks</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./ModuleDemos.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Scheduled Demos</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="ModuleTier.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Tier</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		
+
+		<!-- Main content -->
+		<section class="content">
+			<div class="row">
+			  <div class="col-lg-12 col-12">
+				<div class="box bt-3 border-primary">
+				  <div class="box-header">
+					<h4 class="box-title">Feedback</h4>
+					<ul class="box-controls pull-right">
+					  <li><a class="box-btn-slide" href="#"></a></li>
+					</ul>
+				  </div>
+				  <div class="box-body">
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills customtab2" role="tablist">
+
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="tab" href="#products" role="tab">
+							<span class="hidden-sm-up">
+								<i class="ion-home"></i>
+							</span>
+							<span class="hidden-xs-down">Module Feedback</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#home7" role="tab">
+							<span class="hidden-sm-up">
+								<i class="ion-person"></i>
+							</span> 
+							<span class="hidden-xs-down">Image Feedback</span>
+						</a> 
+					</li>
+
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="products" role="tabpanel">
+							<div class="p-15">
+								<div class="table-responsive">
+									<table class="table table-striped no-border" id="feedbackTableNew" data-toggle="table">
+									<thead>
+									  <tr>
+										<th  data-field="fullName">User</th>
+										<th  data-field="rating">Rating (<i class="bi bi-star-fill"></i>/5)</th>
+										<th  data-field="moduleName">Module</th>
+										<th  data-field="remarks">Remarks</th>
+										<th  data-field="client">Client</th>
+									  </tr>
+									</thead>
+									<tbody class="bt-3 border-primary" id="feedbackTable">
+										<tr>
+											<td class="text-center" colspan="5">
+                                                Please select a module
+                                            </td>
+										</tr>
+									</tbody>
+									<tfoot class="bt-3 border-primary">
+										<tr>
+											<td></td>
+										</tr>
+									</tfoot>
+								  </table>
+								</div>	
+							</div>
+						</div>
+						<div class="tab-pane" id="home7" role="tabpanel">
+							<div class="p-15">
+								<div class="table-responsive">
+									<table class="table table-striped no-border" id="imageFeedbackTableNew" data-toggle="table">
+									<thead>
+									  <tr>
+										<th  data-field="fullName" width="25%">User</th>
+										<th width="20%" data-field="view" data-formatter="viewImage" >View</th>
+										<th  data-field="moduleName" width="15%">Module</th>
+										<th  data-field="remarks" width="30%">Remarks</th>
+										<th  data-field="client">Client</th>
+									  </tr>
+									</thead>
+									<tbody class="bt-3 border-primary" id="imageFeedbackTable">
+										<tr>
+											<td class="text-center" colspan="5">
+                                                Please select a module
+                                            </td>
+										</tr>
+									</tbody>
+									<tfoot class="bt-3 border-primary">
+										<tr>
+											<td></td>
+										</tr>
+									</tfoot>
+								  </table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				</div>
+			  </div>
+
+			</div>
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  
+  <!-- /.content-wrapper -->
+ 
+   <footer class="main-footer">
+	  &copy; 2023 <a href="https://www.iitms.co.in/" target="_blank">Mastersoft ERP</a>.&nbsp; All Rights Reserved.
+  </footer>
+	
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+  <!-- Vendor JS -->
+  <script src="./admin_assets/js/vendors.min.js"></script>
+  <!-- izitoast -->
+	<script src="./admin_assets/js/pages/chat-popup.js"></script>
+    <script src="./admin_assets/icons/feather-icons/feather.min.js"></script>	
+	<!-- EduAdmin App -->
+	<script src="./admin_assets/js/template.js"></script>
+	<script src="./admin_assets/js/pages/editor.js"></script>
+	<script src="./admin_assets/vendor_components/ckeditor/ckeditor.js"></script>
+	
+	<!-- sweet alert lib -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- light gallery JS Libraies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.js" integrity="sha512-Wm00XTqNHcGqQgiDlZVpK4QIhO2MmMJfzNJfh8wwbBC9BR0FtdJwPqDhEYy8jCfKEhWWZe/LDB6FwY7YE9QhMg==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/extensions/export/bootstrap-table-export.min.js" integrity="sha512-cAMZL39BuY4jWHUkLWRS+TlHzd/riowdz6RNNVI6CdKRQw1p1rDn8n34lu6pricfL0i8YXeWQIDF5Xa/HBVLRg==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <script src="./admin_assets/vendor_components/bootstrap-table/dist/extensions/export/libs/FileSaver/FileSaver.min.js" ></script>
+    <script src="./admin_assets/vendor_components/bootstrap-table/dist/extensions/export/libs/es6-promise/es6-promise.auto.min.js" ></script>
+    <script src="./admin_assets/vendor_components/bootstrap-table/dist/extensions/export/libs/js-xlsx/xlsx.core.min.js" ></script>
+    <script src="./admin_assets/vendor_components/bootstrap-table/dist/extensions/export/tableExport.min.js" ></script>
+
+	<script src="./assets/js/experience-feedback.js"></script>
+	<!-- <script src="./admin_assets/js/pages/light-gallery.js"></script> -->
+	<script>
+		function viewImage(value) {
+			console.log(value);
+			return `<img width="30%" height="30%" src=${value}>`
+		}
+	</script>
+</body>
+</html>

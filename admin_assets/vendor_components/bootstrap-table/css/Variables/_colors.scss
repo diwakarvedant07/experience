@@ -1,0 +1,404 @@
+$white : #ffffff;
+$black: #001219;;
+$purple:#6545eb;
+$grey: #777777;
+$offWhite:#f2f2f2;
+
+
+//colors for the lead options
+$darkSlateGrey-100:#355070;
+$dimGrey-100:#6d597a;
+
+$indianred-100:#b56576; 
+$lightcoral-100:#e56b6f;
+$burlywood-100:#eaac8b;
+$redSalsa:#f94144;
+
+//main black for the page
+$richBlack-FOGRA-20:#001219;
+
+
+//modal backdrop color
+$dimGrey-400:#666666;
+
+//background White
+$whiteSmoke:#ebf1f5;
+
+//main panel buttons
+$celadonBlue:#247ba0;
+// $greenSheen:#70c1b3;
+$persianGreen:#2a9d8f;
+$orangeRedCrayola:#fe5f55;
+
+
+$ming:#16697a;
+$orangeRed:#f3722c;
+$yellowOrangeWheel:#f8961e;
+$maizeCrayota:#e4b548;
+$pistachio:#90be6d;
+$zomp:#34aa8b;
+
+
+$blueSapphire:#005F73;
+$viridianGreen: #0A9396;
+$middleBLueGreen:#94D2BD;
+$mediumChampagne:#E9D8A6;
+$gamboge:#EE9B00;
+$alloyOrange:#CA6702;
+$mahogany:#BB3E03;
+$rofous:#AE2012;
+$rubyRed: #9B2226;
+$rosewood:#640D14;
+$imperialRed:#ef233c;
+$cgBlue:#277da1;
+$cgBlue-300:#206988;
+//primary right now
+$queenBlue:#577590;
+
+$queenBlue-300:#455e74;
+//colors for the tags
+$aliceBlue:#E0EAF1;
+$indigoDye:#004574;
+/**
+* TODO: basic layout 1 colors old colors******************
+*/
+
+$linkBlue:#0d70fd;
+$dodgerBlue:#0d6efd;
+$pastalOrange:#f99801;
+$bootstrap-Primary:#386efd;
+
+
+/**
+*Primary bg behind everything
+*/
+$layer0-color: $whiteSmoke;
+
+
+
+$darkSlateBlue:#2b5876;
+$darkSlateBlue-darker:#22475f;
+$darkSlateBlue-lighter:#33688b;
+$save:#264e69;
+
+/**
+* TODO: Primary colors
+*/
+/*$primaryFill:$queenBlue;
+$primaryFill-dark:$queenBlue-300;
+$secondaryFill:$redSalsa;
+$tertiaryFill:$queenBlue;
+$quarternaryFill:$layer0-color;
+$primary : $darkSlateBlue;
+$primary-300:$darkSlateBlue-darker;
+$secondary: $redSalsa;
+$success:$zomp;
+$tertiary:$queenBlue;*/
+
+
+// left panel colors
+$panel-bg:$darkSlateBlue-darker;
+$panel-color:$white;
+
+//tab color
+$leadTabColor:$secondary;
+
+/**
+* TODO: All Scrollbars 
+*/
+$scrollBarColor:$primary;
+
+
+/**
+Colors for the select2 material
+
+*/
+$material-color:#4285f4;
+$material-shadow:#4585f4;
+
+/**
+* Border Colors
+*/
+//thin 1px light
+$light-border-color:rgba(black,0.4);
+$blue-border-color:$linkBlue;
+$lightBorder-thin-1:1px solid $light-border-color;
+$light-Border-thin-2:1px solid rgba(black,0.2);
+
+$assessment-ques-card-border:$light-Border-thin-2;
+$custom-multiSelect-border:$lightBorder-thin-1;
+$visualMapper-key-border:$lightBorder-thin-1;
+$custom-singleSelect-border:$lightBorder-thin-1;
+$inputField-border: 1px solid #ccc;
+
+//thin 2px light
+$thickness1:1px;
+$thickness2:2px;
+$lightBorder-thin-2:$thickness2 solid $light-border-color;
+$customMapping-outer-border:$lightBorder-thin-2;
+$inputField-Focus-border:$thickness2 solid $blue-border-color;
+$custom-singleSelect-focus-border:$thickness1 solid $blue-border-color;
+$custom-multiSelect-focus-border:$custom-singleSelect-focus-border;
+
+
+
+
+
+
+
+
+/**
+*Modal backdrop color
+*/
+$modal-backdrop-color:rgba(black,0.6);
+$modal-header-color:$tertiaryFill;
+
+
+/**
+*Chat bot color
+*/
+$chatBot-circle-color:$tertiary;
+$chatBot-header-color:$chatBot-circle-color;
+
+/**
+*Panel colors
+**/
+$panel-bg-color:$primary;
+$tab-bg-color:$primary-300;
+
+
+
+
+/**
+*Bootstrap button colors
+*/
+
+$lighten-btn-by:5%;
+.btn.btn-secondary,.btn.btn-success,.btn.btn-success:hover{
+    
+    color:$white;
+}
+.btn.btn-primary{
+    background: $queenBlue;
+}
+.btn.btn-outline-secondary:hover{
+    color:$white;
+}
+.btn.btn-primary:hover{
+    background:lighten($queenBlue,$lighten-btn-by);
+}
+
+/**
+* TODO: Table values and colors
+*/
+// $tableHead-bg:$queenBlue;
+
+// $tableHead-color:$white;
+$table-border-color:rgba(black,0.1);
+$tableBtn-background:$secondaryFill;
+$table-selectExport-bg:$indianred-100;
+$table-savedFilters-bg:$lightcoral-100;
+$table-filterTable-bg:$burlywood-100;
+$tableBtn-rightSide-background:$dimGrey-100;
+$tableBtn-noOfEntries-background:$table-selectExport-bg;
+// $tableBtn-leftSide-background:$secondaryFill;
+//th colors
+$table-th-color1:$dimGrey-100;
+$table-th-color2:$indianred-100;
+$table-th-color3:$lightcoral-100;
+$table-th-color4:$burlywood-100;
+
+
+
+/**
+* Grid colors
+*/
+$mainGrid-bg-color:$layer0-color;
+$mainGrid-card-color:$white;
+
+/**
+* Accordion
+**/
+$accordion-open-color:$cgBlue;
+$secondaryAccordionColor:$indianred-100;
+
+
+/**
+*Modal Classes
+*/
+$modal-HR-color:$indianred-100;
+$simple-HR-color:rgba(black,0.2);
+
+/**
+* Alert Circle Colors
+*/
+$alertCircle-yellow:$yellowOrangeWheel;
+$alertCircle-blue:$cgBlue;
+$alertCircle-red:$imperialRed;
+$alertCircle-green:$zomp;
+
+/**
+* TODO: Visual Mapper
+*/
+$none:$queenBlue;
+$low:#ac3939;
+$med:$yellowOrangeWheel;
+$high:#4e8d4e;
+$high-600:#59a159;
+$high-500:#5faf5f;
+$high-400:#67c067;
+$high-300:#69ce69;
+$high-200:#6be26b;
+
+/**
+* Draggable Elements
+**/
+$dragableItem-selected-bg:$zomp;
+$draggableItem1-bgColor:$lightcoral-100;
+$draggableItem2-bgColor:$indianred-100;
+$draggableItem3-bgColor:$burlywood-100;
+$draggableItem4-bgColor:$dimGrey-100;
+
+/**
+* Q/A Section Card 
+**/
+$downvote-color:$redSalsa;
+$upvote-color:$zomp;
+$card-tag-color:rgba(black,0.5);
+$qa-card-tag-color:rgba(black,0.7);
+$qa-card-border-color:rgba(black,0.2);
+$qa-tag-background:$aliceBlue;
+$qa-tag-color:$indigoDye;
+$qa-tag-hover-background:darken($qa-tag-background, 5%);
+$codeTag-bg-color:$aliceBlue;
+.darkSlateGrey{
+    color:$darkSlateGrey-100;
+}
+.darkSlateGrey-bg{
+    background: $darkSlateGrey-100;
+}
+
+.dimGrey{
+    color:$dimGrey-100;
+}
+
+.dimGrey-bg{
+    background:$dimGrey-100;
+}
+
+.indianred{
+    color:$indianred-100;
+}
+.indianred-bg{
+    background:$indianred-100;
+}
+
+.lightcoral{
+    color:$lightcoral-100;
+}
+
+.lightcoral-bg{
+    background:$lightcoral-100;
+}
+
+.burlywood{
+    color:$burlywood-100;
+}
+.burlywood-bg{
+    color:$burlywood-100;
+}
+
+.linkBlue{
+    color:$linkBlue;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+/**
+* Icon COlors
+*/
+$star-color:$yellowOrangeWheel;
+
+
+
+/**
+*Banner Colors
+**/
+$banner-text-color:$white;
+$banner-bg-red:lighten($imperialRed, 5%);
+$banner-bg-yellow:lighten($yellowOrangeWheel,0%);
+/**
+*File colors
+**/
+@mixin fileColors{
+    
+    .fa-file-excel{
+        color:$green;
+    }
+    .fa-file-word{
+        color:$linkBlue;
+    }
+    .fa-file-pdf{
+        color:red;
+    }
+    .fa-copy{
+        color:gray;
+    }
+}
+
+@mixin alertColors-bg{
+    .alertYellow{
+        background: $alertCircle-yellow;
+    }
+    .alertGreen{
+        background: $alertCircle-green;
+    }
+    .alertRed{
+        background: $alertCircle-red;
+    }
+    .alertBlue{
+        background: $alertCircle-blue;
+    }
+}
+
+@mixin alertColors-color{
+    .alertYellow{
+        color: $alertCircle-yellow;
+    }
+    .alertGreen{
+        color: $alertCircle-green;
+    }
+    .alertRed{
+        color: $alertCircle-red;
+    }
+    .alertBlue{
+        color: $alertCircle-blue;
+    }
+}
+$progress-red:#ff7b89;
+.progress-red{
+    color:$progress-red;
+    
+}
+$progress-purple:$purple;
+.progress-purple{
+    color:$purple;
+    
+}
+$progress-blue:$linkBlue;
+.progress-blue{
+    color:$progress-blue;
+    
+}
+$progress-green:#2a9d8f;
+.progress-green{
+    color:$progress-green;
+    
+}
+$progress-orange:$yellowOrangeWheel;
+.progress-orange{
+    color:$progress-orange;
+}
+.progress-thick{
+    font-weight:500;
+}

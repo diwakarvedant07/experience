@@ -1,0 +1,223 @@
+$tran-time:0.15s;
+$btn-color:rgba(black,0.4);
+$lighten-btn-by:1%;
+.tableToolabarLeft{
+    @include flex-row(flex-start,center,10px);
+    button,.selectExport{
+        transition: all 0.3s;
+        font-size: 16px;
+        @include flex-row(center,center,5px);
+        font-weight:$label-weight;
+        transition :all $tran-time ease-in;
+    }
+    .savedFilterListUL{
+        li{
+            a{
+                display:flex;
+                justify-content:space-between;
+                gap:10px;
+            }    
+        }
+    }
+    .savedFilters{
+        display: inline !important;
+        border: 1px solid $cgBlue;
+        color:$cgBlue;
+        
+    }
+    .savedFilters:hover{
+        color:white;
+        background:lighten($cgBlue,2%);
+    }
+    .selectExport{
+        border: 1px solid $indianred-100;
+        color:$indianred-100;
+    }
+    .selectExport:hover{
+        color:white;
+        background:lighten($indianred-100,2%);
+    }
+    .filterTableBtn{
+        border: 1px solid $zomp;
+        color:$zomp;
+    }
+    .filterTableBtn:hover{
+        color:white;
+        background:lighten($zomp,2%);
+    }
+    
+    .selectExport{
+        height:35px;
+             
+    }
+}
+/**
+* ! bootstrap table properties for furure reference
+*/
+.bootstrap-table.bootstrap5{
+    .fix-sticky{    //thable sticky header
+        *{
+            // 
+            background: $white;
+        }
+    }
+    .fixed-table-toolbar{
+        input[type='text']{
+            height:35px;
+        }
+        .columns.columns-right.btn-group{
+            
+            button{
+                // border:1px solid $btn-color;
+                background: white;
+                color:$btn-color;
+                transition:all $tran-time ease-in;
+                i{
+                    font-size:14px !important;
+                } 
+                
+            }
+          
+            button:hover{
+                background:lighten($btn-color, $lighten-btn-by);
+                color:white;
+            }
+        }
+    }
+    .fixed-table-container{
+        .fixed-table-body{
+            table{
+                thead{
+                    th{
+                        border-left:none;
+                        border-right:none;
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            border-left:none;
+                            border-right:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fixed-table-pagination{
+        
+        .pagination-detail{
+            .pagination-info,.page-list{
+                font-size: smaller;
+            }
+            .page-list{
+                
+                .btn-group.dropdown.dropup{
+                    button{
+                        border:1px solid $btn-color;
+                        background: white;
+                        color:$btn-color;
+                        transition:all $tran-time ease-in;
+                    }
+                    button:hover{
+                        background:lighten($btn-color, $lighten-btn-by);
+                        color:white;
+                    }
+                }
+            }
+        }
+        .pagination{
+            .pagination{
+                font-size: smaller;
+                .page-item{
+                    .page-link{
+                        // color: $primaryFill;
+                    }
+                }
+                .active{
+                    .page-link{
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// filter table modal
+.filterOption{
+   
+    padding:10px 10px;
+    width:100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    gap:10px;
+    align-items: center;
+    #valueToSearch{
+        width:100%;
+    }
+    .fa-times:hover{
+        cursor: pointer;
+        color: red;
+    }
+    .fa-plus{
+        font-size:14px;
+    }
+    .fa-plus:hover{
+        color:$linkBlue;
+    }
+    #valueToSearchTo,label[for='valueToSearchTo']{
+        display: none;
+        margin-top:-10px;
+    }
+    
+    input,select{
+        height:30px;
+        width:100%;
+    }
+    
+    .minusInFilter{
+        font-size:14px;
+        position: absolute;
+        right:3%;
+    }
+}
+
+
+//save filter option
+.saveFilter{
+   padding:10px 20px;
+   border-top:1px solid #c8c9ca;
+   display: flex;
+   justify-content: space-between;
+    input{
+        height:30px;
+        display: inline;
+        
+    }  
+
+}
+
+@media (max-width:768px){
+    .bootstrap-table.bootstrap5{
+        .fixed-table-toolbar{
+            .bs-bars.float-left{
+
+            }
+            .columns.columns-right.btn-group.float-right{
+
+            }
+            .float-right.search.btn-group{
+                width:100%;
+                input{
+                    
+                }
+            }
+        }
+        
+
+    }
+}

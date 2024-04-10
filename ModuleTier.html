@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="./admin_assets/images/custom-images/sm-logo.png">
+
+	<title>MSExperience</title>
+	<!-- bootstrap iconsss -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+		rel="stylesheet">
+	<!-- izitoast -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" rel="stylesheet" />
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="./admin_assets/css/vendors_css.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- Style-->
+	<link rel="stylesheet" href="./admin_assets/scss/style.css">
+	<link rel="stylesheet" href="./admin_assets/css/skin_color.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.css"
+		integrity="sha512-49xW99xceMN8dDoWaoCaXvuVMjnUctHv/jOlZxzFSMJYhqDZmSF/UnM6pLJjQu0YEBLSdO1DP0er6rUdm8/VqA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+	<!-- Site wrapper -->
+	<div class="wrapper">
+		<div id="loader"></div>
+
+		<header class="main-header">
+			<div class="d-flex align-items-center logo-box justify-content-start">
+				<a href="#"
+					class="waves-effect waves-light nav-link d-none d-md-inline-block mx-10 push-btn bg-transparent"
+					data-toggle="push-menu" role="button">
+					<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span
+							class="path3"></span></span>
+				</a>
+				<!-- Logo -->
+				<a href="#" class="logo">
+					<!-- logo-->
+					<div class="logo-lg">
+						<span class="dark-logo"><img src="./admin_assets/images/custom-images/company-logo - white.png"
+								alt="logo"></span>
+						<span class="light-logo"><img src="./admin_assets/images/custom-images/company-logo.png"
+								alt="logo"></span>
+					</div>
+				</a>
+			</div>
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top">
+				<!-- Sidebar toggle button-->
+				<div class="app-menu">
+					<ul class="header-megamenu nav">
+						<li class="btn-group nav-item d-md-none">
+							<a href="#" class="waves-effect waves-light nav-link push-btn" data-toggle="push-menu"
+								role="button">
+								<span class="icon-Align-left"><span class="path1"></span><span
+										class="path2"></span><span class="path3"></span></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar-custom-menu r-side">
+					<ul class="nav navbar-nav">
+
+						<!-- User Account-->
+						<li class="dropdown user user-menu me-2">
+							<a href="#"
+								class="waves-effect waves-light dropdown-toggle w-p100 align-items-center d-flex"
+								data-bs-toggle="dropdown" title="User">
+								<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
+								<span class="fs-14" id="username"></span>
+							</a>
+						</li>
+						<!-- Control Sidebar Toggle Button -->
+						<li>
+							<a data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light"
+								id="logout">
+								<i class="bi bi-power"></i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+			<!-- sidebar-->
+			<section class="sidebar position-relative">
+				<div class="multinav">
+					<div class="multinav-scroll" style="height: 100%;">
+						<!-- sidebar menu-->
+						<ul class="sidebar-menu" data-widget="tree">
+							<li class="">
+								<a href="./ModuleSetup.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Module Setup</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./Products.html" target="_blank">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Products</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./ModuleSetupAllUsers.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>All Users</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./ModuleSetupFeedbacks.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Feedbacks</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="./ModuleDemos.html">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Scheduled Demos</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="icon-Layout-4-blocks"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span>Tier</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="container-full">
+
+
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<div class="col-lg-12 col-12">
+							<div class="box bt-3 border-primary">
+								<div class="box-header">
+									<h4 class="box-title">Module Setup</h4>
+									<ul class="box-controls pull-right">
+										<li><a class="box-btn-slide" href="#"></a></li>
+									</ul>
+								</div>
+
+								<div class="box-body">
+									<!-- Nav tabs -->
+									<ul class="nav nav-pills customtab2" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" data-bs-toggle="tab" href="#tiers" role="tab">
+											<span class="hidden-sm-up">
+												<i class="ion-home"></i>
+											</span>
+											<span class="hidden-xs-down">Tier Categories</span>
+										</a>
+									</li>
+									</ul>
+									<!-- Tab panes -->
+									<div class="tab-content">
+										<div class="tab-pane active" id="tiers" role="tabpanel">
+											<div class="p-15">
+												<div class="text-end">
+													<button type="button" class="btn btn-primary" id="openAddTier">Add
+														Tier Category</button>
+												</div>
+												<div class="table-responsive">
+													<table class="table table-striped no-border">
+														<thead>
+															<tr>
+																<th>Edit</th>
+																<th>Tier Name</th>
+																<th>Color</th>
+																<th>Icon</th>
+																<th width="10%">Status</th>
+															</tr>
+														</thead>
+														<tbody class="bt-3 border-primary" id="tierEditingTable">
+
+														</tbody>
+														<tfoot class="bt-3 border-primary">
+															<tr>
+																<td></td>
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalAddTier" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content p-5">
+				<div class="modal-header">
+		
+					<h4 class="modal-title">Add Tier</h4>
+					<button type="button" class="btn close" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="row">
+						
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="form-group" id="config">
+								<label class="form-label"><sup class="text-danger">*</sup>Tier Name</label>
+								<input type="text" class="form-control" required="" placeholder="e.g. Academic"
+									id="newTierTitle" name="txt" tabindex="1" spellcheck="true">
+								<div class="invalid-feedback">
+									Please Enter label name
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="form-group" id="config">
+								<label class="form-label"><sup class="text-danger">*</sup>Tier Color</label>
+								<input type="text" class="form-control" required="" placeholder="e.g. Academic"
+									id="newTierColor" name="txt" tabindex="1" spellcheck="true">
+								<div class="invalid-feedback">
+									Please Enter label name
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="form-group" id="config">
+								<label class="form-label"><sup class="text-danger">*</sup>Parent Tier</label>
+									<select
+										class="form-control select2 form-select required-select2-validation"
+										id="tierListDropdown" name="ddl" tabindex="1">
+										<option value="0">Please Select</option>
+									</select>
+								<div class="invalid-feedback">
+									Please Enter label name
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="form-group" id="config">
+								<div class="d-flex justify-content-between">
+									<label class="form-label"><sup class="text-danger">*</sup>Icon</label>
+									<span class="bi bi-info-circle text-info text-end" title="Select Icon"
+										data-bs-target="#IconModal" data-bs-toggle="modal"></span>
+								</div>
+		
+								<input type="text" class="form-control" required="" placeholder=""
+									id="newTierIcon" name="txt" tabindex="1" spellcheck="true">
+								<div class="invalid-feedback">
+									Please Enter label name
+								</div>
+							</div>
+						</div>
+		
+						<!-- <div class="col-lg-4 col-md-4 col-12">
+						<button type="button" class="btn btn-primary">icons</button>
+					</div> -->
+		
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="form-group" id="config">
+								<div class="control-label"><sup></sup>Status</div>
+								<div class="mt-15">
+									<button id="newTierStatus" type="button" class="btn btn-toggle btn-primary"
+										data-bs-toggle="button" aria-pressed="false" autocomplete="off">
+										<div class="handle"></div>
+									</button>
+								</div>
+		
+							</div>
+						</div>
+		
+						<div class='col-12 text-center'>
+							<button type="button" tabindex="1" class="btn btn-primary" data-bs-dismiss="modal"
+								id="newTierSubmit">Submit</button>
+							<button type="button" class="btn btn-danger btn-outline" tabindex="1" id="btnClose"
+								data-bs-dismiss="modal">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- /.content-wrapper -->
+
+		<footer class="main-footer">
+			&copy; 2023 <a href="https://www.iitms.co.in/" target="_blank">Mastersoft ERP</a>.&nbsp; All Rights
+			Reserved.
+		</footer>
+
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+		<!-- Vendor JS -->
+		<script src="./admin_assets/js/vendors.min.js"></script>
+		<!-- izitoast -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+		<script src="./admin_assets/js/pages/chat-popup.js"></script>
+		<script src="./admin_assets/icons/feather-icons/feather.min.js"></script>
+		<!-- EduAdmin App -->
+		<script src="./admin_assets/js/template.js"></script>
+		<script src="./admin_assets/js/pages/editor.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.js"
+			integrity="sha512-MrA7WH8h42LMq8GWxQGmWjrtalBjrfIzCQ+i2EZA26cZ7OBiBd/Uct5S3NP9IBqKx5b+MMNH1PhzTsk6J9nPQQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<!-- sweet alert lib -->
+		<script src="./admin_assets/bundles/lightgallery/dist/js/lightgallery-all.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<!-- light gallery JS Libraies -->
+		<script src="./assets/js/experience-tier.js"></script>
+		<!-- <script src="./admin_assets/js/pages/light-gallery.js"></script> -->
+		<script src="./admin_assets/js/bi-icons.js"></script>
+
+		<script>
+			$('#IconModal').appendTo('#modalAddModule')
+		</script>
+
+</body>
+
+</html>
